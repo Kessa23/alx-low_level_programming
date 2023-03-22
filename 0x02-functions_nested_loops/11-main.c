@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_to_98(98);
+void print_to_98(int n);
 
 /**
  * main - check the code
