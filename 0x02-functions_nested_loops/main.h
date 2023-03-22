@@ -12,5 +12,6 @@ int print_last_digit(int);
 void jack_baver(void);
 void times_tablet(void);
 int add(int, int);
+void print_times_table(int n);
 
 #endif	
