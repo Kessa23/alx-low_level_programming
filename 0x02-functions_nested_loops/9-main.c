@@ -1,11 +1,13 @@
 #include "main.h"
-void times_table(void);
 
 /**
  * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
+
+void times_table(void);
+
 int main(void)
 {
 	times_table();
