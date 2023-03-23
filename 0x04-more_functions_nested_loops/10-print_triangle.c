@@ -2,27 +2,28 @@
 /**
  * print_triangle - prints a triangle followed by a new line
  * @size: size of the triangle
+ *
+ * Return: nothing on success
 */
 void print_triangle(int size)
 {
+	int start = 0, end = size, count;
+
 	if (size <= 0)
-	{
 		_putchar('\n');
-	}
 	else
 	{
-		int i, j;
-
-		for (i = 1; i <= size; i++)
+		for (count = 0; count < end; count++)
 		{
-			for (j = i; j <= size; j++)
+			while (start < end)
 			{
-				_putchar(' ');
+				if ((start + count + 1) <= end)
+					_putchar('#');
+				else
+					_putchar(' ');
+				start++;
 			}
-			for (j = 1; j <= i; j++)
-			{
-				_putchar('#');
-			}
+			start = 0;
 			_putchar('\n');
 		}
 	}
